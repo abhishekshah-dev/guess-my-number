@@ -52,3 +52,11 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".number").style.width = "15rem";
   document.querySelector(".guess").value = "";
 });
+
+//Implementing Keypress
+
+document.querySelector(".guess").addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    document.querySelector(".check").click();
+  }
+});
